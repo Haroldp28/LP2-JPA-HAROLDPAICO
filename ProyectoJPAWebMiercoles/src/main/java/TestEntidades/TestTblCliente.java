@@ -49,7 +49,7 @@ public class TestTblCliente {
 		climp.EliminarCliente(cliente);
 		//mensaje
 				System.out.println("Se ha eliminado de la BD");*/
-		
+		/*
 		//USANDO EL METODO LISTAR
 		List<TblCliente> listado=climp.ListarCliente();
 		//aplicamos un bucle for
@@ -66,9 +66,17 @@ public class TestTblCliente {
 			
 		}//fin el bucle for
 		
+		*/
 		
-		
-		
+		//metodo buscar
+		//codigo a buscar
+		cliente.setIdcliente(1);
+		TblCliente buscliente=climp.BuscarCliente(cliente);
+		System.out.println("Codigo "+buscliente.getIdcliente()+
+				"| Nombre "+buscliente.getNomcliente()+
+				"| Apellido "+buscliente.getApecliente()+
+				"| Telefono "+buscliente.getTelcliente()+
+				"| Email "+buscliente.getEmailcliente());
 		
 	} //fin del metodo principal....
 
